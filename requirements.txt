@@ -1,0 +1,58 @@
+# Stable Diffusion WebUI - Python 패키지 의존성
+# 
+# 사용법:
+#   pip install -r requirements.txt
+#
+# 참고: 이 파일은 프로젝트 루트용입니다.
+# 실제 설치 시 stable-diffusion-webui/requirements.txt를 사용하거나
+# webui.sh를 실행하면 자동으로 설치됩니다.
+
+# 핵심 라이브러리
+GitPython
+Pillow
+accelerate
+
+# 이미지 처리
+blendmodes
+clean-fid
+einops
+facexlib
+kornia
+scikit-image>=0.19
+resize-right
+
+# 웹 인터페이스
+fastapi>=0.90.1
+gradio==3.41.2
+
+# 유틸리티
+diskcache
+inflection
+jsonmerge
+lark
+numpy
+omegaconf
+piexif
+psutil
+requests
+
+# AI/ML 라이브러리
+open-clip-torch
+pytorch_lightning
+safetensors
+tomesd
+torch
+torchdiffeq
+torchsde
+transformers==4.30.2
+
+# 이미지 포맷 지원
+pillow-avif-plugin==1.4.3
+
+# 프로토콜 버퍼 (버전 고정)
+protobuf==3.20.0
+
+# 참고:
+# - torch는 시스템에 따라 CUDA/CPU 버전이 자동 선택됩니다
+# - webui.sh 실행 시 자동으로 올바른 버전이 설치됩니다
+# - GPU 사용 시 CUDA 버전에 맞는 torch가 필요합니다
